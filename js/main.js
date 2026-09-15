@@ -909,16 +909,32 @@
     return pdf;
   }
 
+  // jsPDF (~90KB) is only ever needed once someone actually clicks Download,
+  // so it's loaded on demand here instead of blocking every page load.
+  let jsPdfLoadPromise = null;
+  function loadJsPdf() {
+    if (typeof jspdf !== 'undefined') return Promise.resolve();
+    if (jsPdfLoadPromise) return jsPdfLoadPromise;
+    jsPdfLoadPromise = new Promise((resolve, reject) => {
+      const script = document.createElement('script');
+      script.src = 'https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js';
+      script.onload = resolve;
+      script.onerror = reject;
+      document.body.appendChild(script);
+    });
+    return jsPdfLoadPromise;
+  }
+
   const downloadBtn = document.getElementById('invoiceDownloadBtn');
   downloadBtn?.addEventListener('click', async () => {
     const span = downloadBtn.querySelector('span');
     const original = span.textContent;
-    if (typeof jspdf === 'undefined') return;
 
     downloadBtn.disabled = true;
     span.textContent = 'Preparing…';
 
     try {
+      await loadJsPdf();
       const pdf = await buildInvoicePdf();
       const name = document.getElementById('invoiceBillToName')?.textContent.trim();
       const companyLine = document.getElementById('invoiceBillToCompany')?.textContent.trim().split('\n')[0];
