@@ -1,0 +1,1332 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BillZino — Invoicing made simple</title>
+<meta name="description" content="BillZino is the fastest way to create invoices, get paid on time, and keep your books clean. Built for freelancers and growing teams.">
+<link rel="icon" type="image/png" href="assets/img/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css?v=41">
+</head>
+<body>
+
+<div class="noise"></div>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header" id="siteHeader">
+  <div class="container header-inner">
+
+    <a href="index.html" class="brand">
+      <img src="assets/img/favicon.png" alt="BillZino" class="brand-mark">
+      <span class="brand-name">Bill<span class="accent">Zino</span></span>
+    </a>
+
+    <nav class="main-nav" id="mainNav">
+      <a href="#dashboard">Product</a>
+      <a href="#why">Features</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="contact.html" class="nav-mobile-login">Contact us</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+        <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
+
+      <a href="contact.html" class="btn btn-ghost header-login">Contact us</a>
+      <a href="contact.html" class="btn btn-primary header-cta">
+        Request access
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+      </a>
+
+      <button class="nav-burger" id="navBurger" aria-label="Open menu" aria-expanded="false" aria-controls="mainNav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<main>
+  <section class="hero">
+
+    <div class="hero-glow hero-glow--one" aria-hidden="true"></div>
+    <div class="hero-glow hero-glow--two" aria-hidden="true"></div>
+    <div class="hero-grid" aria-hidden="true"></div>
+
+    <div class="container hero-inner">
+
+      <div class="hero-copy">
+
+        <a href="#builder" class="hero-badge reveal" data-reveal="0">
+          <span class="hero-badge-dot"></span>
+          Multiple color themes, fully customizable
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
+        </a>
+
+        <h1 class="hero-title reveal" data-reveal="1">
+          Create invoices<br>
+          in <span class="hero-title-accent">seconds.</span>
+        </h1>
+
+        <p class="hero-sub reveal" data-reveal="2">
+          Pick a template, drop in your details, and send a beautifully
+          designed invoice — no Canva, no Word docs. Then track every client,
+          company, and dollar you've billed from one dashboard.
+        </p>
+
+        <div class="hero-actions reveal" data-reveal="3">
+          <a href="#builder" class="btn btn-primary btn-lg">
+            Create your first invoice
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+
+        <div class="hero-meta reveal" data-reveal="4">
+          <span>No design skills needed</span>
+          <span class="dot">·</span>
+          <span>Free plan forever</span>
+          <span class="dot">·</span>
+          <span>Set up in 2 minutes</span>
+        </div>
+
+      </div>
+
+      <!-- ============ HERO VISUAL / MOCKUP ============ -->
+      <div class="hero-visual reveal" data-reveal="2" id="heroVisual">
+
+        <div class="hero-laptop">
+         <div class="hero-laptop-tilt">
+          <div class="laptop">
+            <div class="laptop-top">
+              <div class="laptop-cam"></div>
+              <div class="laptop-screen">
+                <div class="dash-canvas">
+
+                <div class="dash">
+                  <aside class="dash-side">
+                    <div class="dash-brand">
+                      <img src="assets/img/favicon.png" alt="">
+                      <span>Bill<b class="accent">Zino</b></span>
+                    </div>
+
+                    <nav class="dash-nav">
+                      <a class="is-active">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18M7 15l4-4 4 3 5-6"/></svg>
+                        Analytics
+                      </a>
+                      <a>
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2h9l5 5v13a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2zM14 2v6h6"/></svg>
+                        Invoices
+                      </a>
+                      <a>
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+                        Templates
+                      </a>
+                      <a>
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                        Clients
+                      </a>
+                      <a>
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9c.26.63.85 1.09 1.51 1H21a2 2 0 1 1 0 4h-.09c-.7 0-1.29.4-1.51 1z"/></svg>
+                        Settings
+                      </a>
+                    </nav>
+
+                    <div class="dash-user">
+                      <span class="dash-avatar">SB</span>
+                      <div>
+                        <strong>Soufiane B.</strong>
+                        <small>studio@billzino.com</small>
+                      </div>
+                    </div>
+                  </aside>
+
+                  <main class="dash-main">
+                    <div class="dash-topbar">
+                      <div>
+                        <h3>Dashboard</h3>
+                        <p>Welcome back — here's your month.</p>
+                      </div>
+                      <span class="dash-cta">
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg>
+                        New invoice
+                      </span>
+                    </div>
+
+                    <div class="dash-stats">
+                      <div class="dash-stat">
+                        <span>Total invoiced</span>
+                        <strong class="mono">$18,420</strong>
+                      </div>
+                      <div class="dash-stat is-good">
+                        <span>Paid</span>
+                        <strong class="mono">$14,900</strong>
+                      </div>
+                      <div class="dash-stat is-warn">
+                        <span>Pending</span>
+                        <strong class="mono">$2,800</strong>
+                      </div>
+                      <div class="dash-stat is-bad">
+                        <span>Overdue</span>
+                        <strong class="mono">$720</strong>
+                      </div>
+                    </div>
+
+                    <div class="dash-chart-card">
+                      <div class="dash-chart-head">
+                        <span>Invoiced overview</span>
+                        <span class="dash-chart-pill">+24% vs last month</span>
+                      </div>
+                      <svg class="dash-bars" viewBox="0 0 560 150" preserveAspectRatio="none">
+                        <defs>
+                          <linearGradient id="barGrad2" x1="0" y1="0" x2="0" y2="1">
+                            <stop offset="0%" stop-color="#00ff6a"/>
+                            <stop offset="100%" stop-color="#00a82e"/>
+                          </linearGradient>
+                        </defs>
+                        <rect x="10"  y="92"  width="40" height="58" rx="5" fill="url(#barGrad2)"/>
+                        <rect x="90"  y="70"  width="40" height="80" rx="5" fill="url(#barGrad2)"/>
+                        <rect x="170" y="82"  width="40" height="68" rx="5" fill="url(#barGrad2)"/>
+                        <rect x="250" y="40"  width="40" height="110" rx="5" fill="url(#barGrad2)"/>
+                        <rect x="330" y="58"  width="40" height="92" rx="5" fill="url(#barGrad2)"/>
+                        <rect x="410" y="15"  width="40" height="135" rx="5" fill="url(#barGrad2)"/>
+                        <rect x="490" y="30"  width="40" height="120" rx="5" fill="url(#barGrad2)"/>
+                      </svg>
+                      <div class="dash-chart-labels">
+                        <span>Jan</span><span>Feb</span><span>Mar</span><span>Apr</span><span>May</span><span>Jun</span><span>Jul</span>
+                      </div>
+                    </div>
+
+                    <div class="dash-table-card">
+                      <div class="dash-table-head">
+                        <span>Recent invoices</span>
+                        <span class="dash-table-link">View all</span>
+                      </div>
+                      <div class="dash-row dash-row--head">
+                        <span>Invoice</span><span>Client</span><span>Status</span><span>Amount</span>
+                      </div>
+                      <div class="dash-row">
+                        <span class="mono">#BZ-2049</span><span>Solaris Design Group</span><span class="dash-pill is-sent">Sent</span><span class="mono">$5,150.00</span>
+                      </div>
+                      <div class="dash-row">
+                        <span class="mono">#BZ-2048</span><span>Northwind Studio</span><span class="dash-pill is-paid">Paid</span><span class="mono">$2,275.00</span>
+                      </div>
+                      <div class="dash-row">
+                        <span class="mono">#BZ-2047</span><span>Almass Retail Co.</span><span class="dash-pill is-paid">Paid</span><span class="mono">$980.00</span>
+                      </div>
+                    </div>
+                  </main>
+                </div>
+
+                </div>
+                <div class="laptop-glass"></div>
+              </div>
+            </div>
+            <div class="laptop-base"></div>
+          </div>
+         </div>
+        </div>
+
+      </div>
+
+      <div class="trusted-strip reveal" data-reveal="5">
+        <div class="trusted-row">
+          <span class="trusted-label">Trusted by<br>teams at</span>
+
+          <div class="trusted-panel" id="trustedPanel">
+            <button class="trusted-arrow is-prev" id="trustedPrev" aria-label="Previous">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+            </button>
+
+            <div class="trusted-viewport">
+              <div class="trusted-track" id="trustedTrack">
+                <img src="assets/img/logos/gls-pro.png" alt="GLS Pro">
+                <img src="assets/img/logos/rdx-solutions.png" alt="RDX Solutions">
+                <img src="assets/img/logos/avc-services.png" alt="AVC Services">
+                <img src="assets/img/logos/bls-corporation.png" alt="BLS Corporation">
+                <img src="assets/img/logos/qms-international.png" alt="QMS International">
+                <img src="assets/img/logos/trx-partners.png" alt="TRX Partners">
+                <img src="assets/img/logos/northpeak.png" alt="Northpeak LLC">
+                <img src="assets/img/logos/velnora.png" alt="Velnora FZE">
+                <img src="assets/img/logos/gls-pro.png" alt="" aria-hidden="true">
+                <img src="assets/img/logos/rdx-solutions.png" alt="" aria-hidden="true">
+                <img src="assets/img/logos/avc-services.png" alt="" aria-hidden="true">
+                <img src="assets/img/logos/bls-corporation.png" alt="" aria-hidden="true">
+                <img src="assets/img/logos/qms-international.png" alt="" aria-hidden="true">
+                <img src="assets/img/logos/trx-partners.png" alt="" aria-hidden="true">
+                <img src="assets/img/logos/northpeak.png" alt="" aria-hidden="true">
+                <img src="assets/img/logos/velnora.png" alt="" aria-hidden="true">
+              </div>
+            </div>
+
+            <button class="trusted-arrow is-next" id="trustedNext" aria-label="Next">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============ WHY BILLZINO ============ -->
+  <section class="why" id="why">
+    <div class="why-glow" aria-hidden="true"></div>
+
+    <div class="container">
+      <div class="showcase-head">
+        <span class="eyebrow reveal" data-reveal="0">Why BillZino</span>
+        <h2 class="showcase-title reveal" data-reveal="1">
+          Why choose <span class="hero-title-accent">BillZino?</span>
+        </h2>
+        <p class="showcase-sub reveal" data-reveal="2">
+          Three things every other invoicing tool makes you choose between.
+          You don't have to.
+        </p>
+      </div>
+
+      <div class="why-grid">
+        <div class="why-line" aria-hidden="true"></div>
+
+        <div class="why-card reveal" data-reveal="3">
+          <span class="why-card-number">01</span>
+          <div class="why-card-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+            <span class="why-card-icon-ring"></span>
+          </div>
+          <h3>Templates that do the design for you</h3>
+          <p>Pick a template, drop in your logo and line items. No Canva grids,
+            no fighting with alignment — BillZino handles the margins, the
+            spacing, the polish. Every time.</p>
+          <a href="#builder" class="why-card-link">
+            Explore templates
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+
+        <div class="why-card reveal" data-reveal="4">
+          <span class="why-card-number">02</span>
+          <div class="why-card-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18M7 15l4-4 4 3 5-6"/></svg>
+            <span class="why-card-icon-ring"></span>
+          </div>
+          <h3>See exactly where you stand</h3>
+          <p>The moment you send an invoice, your dashboard updates. Paid,
+            pending, overdue — broken down by every client and company
+            you work with, always current.</p>
+          <a href="#dashboard" class="why-card-link">
+            See the dashboard
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+
+        <div class="why-card reveal" data-reveal="5">
+          <span class="why-card-number">03</span>
+          <div class="why-card-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="13.5" cy="6.5" r=".5" fill="currentColor"/><circle cx="17.5" cy="10.5" r=".5" fill="currentColor"/><circle cx="8.5" cy="7.5" r=".5" fill="currentColor"/><circle cx="6.5" cy="12.5" r=".5" fill="currentColor"/><path d="M12 2a10 10 0 1 0 0 20c1.1 0 2-.9 2-2 0-.5-.2-1-.5-1.3-.3-.4-.5-.8-.5-1.3 0-1.1.9-2 2-2h2.4a2 2 0 0 0 2-2A10 10 0 0 0 12 2z"/></svg>
+            <span class="why-card-icon-ring"></span>
+          </div>
+          <h3>Unmistakably, obviously yours</h3>
+          <p>Your logo, your colors, your signature, even your stamp. Every
+            invoice you send looks like it came from a real studio —
+            because it did.</p>
+          <a href="#builder" class="why-card-link">
+            Try the builder
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ INVOICE BUILDER ============ -->
+  <section class="builder" id="builder">
+    <div class="builder-glow" aria-hidden="true"></div>
+
+    <div class="container">
+
+      <div class="showcase-head">
+        <span class="eyebrow reveal" data-reveal="0">Invoice builder</span>
+        <h2 class="showcase-title reveal" data-reveal="1">
+          Pick a template. <span class="hero-title-accent">Fill in the details.</span>
+        </h2>
+        <p class="showcase-sub reveal" data-reveal="2">
+          No design skills, no fighting with Canva grids. BillZino handles the
+          margins, the alignment, the typography — so what you send is always
+          worth billing for.
+        </p>
+      </div>
+
+      <div class="builder-window reveal" data-reveal="3">
+        <div class="builder-titlebar">
+          <div class="builder-dots">
+            <span></span><span></span><span></span>
+          </div>
+          <div class="builder-url">
+            <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+            app.billzino.com/invoices/new
+          </div>
+          <div class="builder-titlebar-spacer"></div>
+        </div>
+
+        <div class="builder-body">
+          <div class="builder-canvas">
+
+            <div class="invoice-app" id="invoiceApp">
+
+              <div class="invoice-paper">
+
+                <div class="invoice-watermark" aria-hidden="true"></div>
+
+                <div class="invoice-paper-top">
+                  <div class="invoice-logo-cluster">
+                    <div class="invoice-logo-box" id="invoiceLogoBox">
+                      <input type="file" id="invoiceLogoInput" accept="image/*" hidden>
+                      <img id="invoiceLogoImg" alt="" hidden>
+                      <svg class="logo-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+                      <span class="logo-text">Add logo</span>
+                      <button type="button" class="invoice-logo-remove" id="invoiceLogoRemove" aria-label="Remove logo">
+                        <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6L6 18M6 6l12 12"/></svg>
+                      </button>
+                      <span class="invoice-logo-resize" id="invoiceLogoResize" aria-hidden="true">
+                        <svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M20 20L9 20M20 20L20 9"/></svg>
+                      </span>
+                    </div>
+                  </div>
+
+                  <div class="invoice-meta">
+                    <div class="invoice-meta-row"><span>Invoice #</span><strong class="editable" contenteditable="true" data-placeholder="BZ-0000">BZ-2050</strong></div>
+                    <div class="invoice-meta-row"><span>Issue date</span><strong class="editable" contenteditable="true" data-placeholder="Select date">Sep 12, 2026</strong></div>
+                    <div class="invoice-meta-row"><span>Due date</span><strong class="editable" contenteditable="true" data-placeholder="Select date">Oct 12, 2026</strong></div>
+                  </div>
+                </div>
+
+                <div class="invoice-stripe"></div>
+
+                <h3 class="invoice-title" id="invoiceDocTitle">Invoice</h3>
+
+                <div class="invoice-parties">
+                  <div class="invoice-party">
+                    <span class="invoice-party-label"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V7l8-4v18M13 21V11l6 3v7"/></svg>Bill from</span>
+                    <strong class="editable" contenteditable="true" data-placeholder="Your company">Nova Studio LLC</strong>
+                    <p class="editable" contenteditable="true" data-placeholder="Your address">412 Harbor Lane<br>Austin, TX 78701</p>
+                  </div>
+                  <div class="invoice-party">
+                    <span class="invoice-party-label"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>Bill to</span>
+                    <strong class="editable" contenteditable="true" data-placeholder="Client name" id="invoiceBillToName"></strong>
+                    <p class="editable" contenteditable="true" data-placeholder="Company, address, email" id="invoiceBillToCompany"></p>
+                  </div>
+                </div>
+
+                <div class="invoice-table" id="invoiceTable">
+                  <div class="invoice-table-head">
+                    <span>Item</span><span>Qty</span><span>Rate</span><span>Amount</span>
+                  </div>
+                  <div class="invoice-table-row" data-row>
+                    <span class="editable" contenteditable="true" data-placeholder="Item name">Brand identity package</span>
+                    <span class="editable is-qty" contenteditable="true" data-placeholder="1">1</span>
+                    <span class="editable is-rate" contenteditable="true" data-placeholder="0.00">1200.00</span>
+                    <span class="amount">$1,200.00</span>
+                    <button type="button" class="invoice-line-remove" aria-label="Remove line item">
+                      <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6L6 18M6 6l12 12"/></svg>
+                    </button>
+                  </div>
+                  <div class="invoice-table-row" data-row>
+                    <span class="editable" contenteditable="true" data-placeholder="Item name">Social templates (10)</span>
+                    <span class="editable is-qty" contenteditable="true" data-placeholder="1">1</span>
+                    <span class="editable is-rate" contenteditable="true" data-placeholder="0.00">450.00</span>
+                    <span class="amount">$450.00</span>
+                    <button type="button" class="invoice-line-remove" aria-label="Remove line item">
+                      <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6L6 18M6 6l12 12"/></svg>
+                    </button>
+                  </div>
+                </div>
+
+                <button class="invoice-add-line" type="button" id="invoiceAddLine">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg>
+                  Add line item
+                </button>
+
+                <div class="invoice-totals" id="invoiceTotals">
+                  <div class="invoice-totals-row"><span>Subtotal</span><span id="invoiceSubtotal">$1,650.00</span></div>
+                  <div class="invoice-totals-row" id="invoiceDiscountRow" hidden><span>Discount</span><span id="invoiceDiscountAmt">-$0.00</span></div>
+                  <div class="invoice-totals-row" id="invoiceTaxRow" hidden><span>Tax</span><span id="invoiceTaxAmt">$0.00</span></div>
+                  <div class="invoice-totals-row" id="invoiceShippingRow" hidden><span>Shipping</span><span id="invoiceShippingAmt">$0.00</span></div>
+                  <div class="invoice-totals-row is-due"><span>Amount due</span><span id="invoiceDue">$1,650.00</span></div>
+                </div>
+
+                <div class="invoice-bottom">
+                  <div class="invoice-bottom-col">
+                    <div class="invoice-notes">
+                      <span class="invoice-party-label"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3v4a1 1 0 0 0 1 1h4M17 21H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h7l5 5v11a2 2 0 0 1-2 2zM9 13h6M9 17h6"/></svg>Notes</span>
+                      <p class="editable" contenteditable="true" data-placeholder="Add a note for your client">Payment due within 15 days. Thank you for your business!</p>
+                    </div>
+                    <div class="invoice-terms" id="invoiceTermsBlock" hidden>
+                      <span class="invoice-party-label"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>Terms &amp; conditions</span>
+                      <p class="editable" contenteditable="true" data-placeholder="Add your terms">Late payments may incur a 1.5% monthly fee. All work remains property of Nova Studio LLC until paid in full.</p>
+                    </div>
+                    <div class="invoice-bank">
+                      <span class="invoice-party-label"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M3 10l9-7 9 7M5 10v11M19 10v11M9 10v11M15 10v11"/></svg>Bank account details</span>
+                      <p class="editable" contenteditable="true" data-placeholder="Bank name, account number, routing / IBAN — however your client should pay you">Chase Bank · Account 4102 8837 219 · Routing 021000021</p>
+                    </div>
+                  </div>
+
+                  <div class="invoice-signature" id="invoiceSignatureBlock" hidden>
+                    <div class="invoice-sig-pad-wrap">
+                      <canvas class="invoice-sig-pad" id="invoiceSigCanvas" width="320" height="120"></canvas>
+                      <span class="invoice-sig-placeholder" id="invoiceSigPlaceholder">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>
+                        Draw your signature
+                      </span>
+                      <div class="invoice-stamp-cluster" id="invoiceStampCluster" hidden>
+                        <img class="invoice-stamp-img" id="invoiceStampImg" alt="">
+                        <span class="invoice-stamp-move" aria-hidden="true">
+                          <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 9l-3 3 3 3"/><path d="M9 5l3-3 3 3"/><path d="M15 19l-3 3-3-3"/><path d="M19 9l3 3-3 3"/><line x1="2" y1="12" x2="22" y2="12"/><line x1="12" y1="2" x2="12" y2="22"/></svg>
+                        </span>
+                        <button type="button" class="invoice-stamp-remove" id="invoiceStampRemove" aria-label="Remove stamp">
+                          <svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6L6 18M6 6l12 12"/></svg>
+                        </button>
+                        <span class="invoice-stamp-resize" id="invoiceStampResize" aria-hidden="true">
+                          <svg width="8" height="8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round"><path d="M20 20L9 20M20 20L20 9"/></svg>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="invoice-sig-toolbar">
+                      <button type="button" id="invoiceSigClear">Clear</button>
+                      <span class="invoice-sig-divider"></span>
+                      <label class="invoice-stamp-upload" for="invoiceStampInput">
+                        <input type="file" id="invoiceStampInput" accept="image/*" hidden>
+                        + Add stamp
+                      </label>
+                    </div>
+                    <span class="invoice-sig-caption">Authorized signature</span>
+                  </div>
+                </div>
+
+                <div class="invoice-footer-bar">
+                  <span>
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                    <span class="editable" contenteditable="true" data-placeholder="Phone number">+1 (555) 013-4488</span>
+                  </span>
+                  <span>
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v16H4z" opacity="0"/><path d="M22 6l-10 7L2 6"/><rect x="2" y="4" width="20" height="16" rx="2"/></svg>
+                    <span class="editable" contenteditable="true" data-placeholder="Email address">hello@novastudio.co</span>
+                  </span>
+                  <span>
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 1 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                    <span class="editable" contenteditable="true" data-placeholder="City, address">Austin, TX</span>
+                  </span>
+                </div>
+
+              </div>
+
+              <div class="invoice-sidebar">
+                <div class="invoice-side-block">
+                  <span class="invoice-side-label">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3v4a1 1 0 0 0 1 1h4M17 21H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h7l5 5v11a2 2 0 0 1-2 2zM9 13h6M9 17h6"/></svg>
+                    Document type
+                  </span>
+                  <div class="invoice-doctype-group" id="invoiceDoctypeGroup">
+                    <button type="button" class="invoice-doctype-btn is-active" data-type="Invoice">Invoice</button>
+                    <button type="button" class="invoice-doctype-btn" data-type="Tax Invoice">Tax Invoice</button>
+                    <button type="button" class="invoice-doctype-btn" data-type="Quote">Quote</button>
+                    <button type="button" class="invoice-doctype-btn" data-type="Receipt">Receipt</button>
+                  </div>
+                </div>
+
+                <div class="invoice-side-block">
+                  <span class="invoice-side-label">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="13.5" cy="6.5" r=".5" fill="currentColor"/><circle cx="17.5" cy="10.5" r=".5" fill="currentColor"/><circle cx="8.5" cy="7.5" r=".5" fill="currentColor"/><circle cx="6.5" cy="12.5" r=".5" fill="currentColor"/><path d="M12 2a10 10 0 1 0 0 20c1.1 0 2-.9 2-2 0-.5-.2-1-.5-1.3-.3-.4-.5-.8-.5-1.3 0-1.1.9-2 2-2h2.4a2 2 0 0 0 2-2A10 10 0 0 0 12 2z"/></svg>
+                    Template
+                  </span>
+                  <div class="invoice-swatches" id="invoiceSwatches">
+                    <button class="invoice-swatch is-active" style="--sw:#1a1d1f" data-text="light" aria-label="Ink">
+                      <span class="invoice-swatch-check"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>
+                    </button>
+                    <button class="invoice-swatch" style="--sw:#00d639" data-text="dark" aria-label="BillZino green">
+                      <span class="invoice-swatch-check"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#04160a" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>
+                    </button>
+                    <button class="invoice-swatch" style="--sw:#f5b342" data-text="dark" aria-label="Amber">
+                      <span class="invoice-swatch-check"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#04160a" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>
+                    </button>
+                    <button class="invoice-swatch" style="--sw:#0019D6" data-text="light" aria-label="Blue">
+                      <span class="invoice-swatch-check"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>
+                    </button>
+                    <button class="invoice-swatch is-pro" data-text="light" aria-label="Gradient — Pro">
+                      <span class="invoice-swatch-pro">PRO</span>
+                      <span class="invoice-swatch-check"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>
+                    </button>
+                    <button class="invoice-swatch invoice-swatch-custom" id="invoiceSwatchCustom" type="button" aria-label="Pick a custom color">
+                      <span class="invoice-swatch-pen-badge">
+                        <svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>
+                      </span>
+                      <span class="invoice-swatch-check"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>
+                    </button>
+                  </div>
+                  <div class="invoice-custom-picker" id="invoiceCustomPicker" hidden>
+                    <label class="invoice-color-swatch-wrap">
+                      <input type="color" id="invoiceColorInput" value="#00d639" aria-label="Pick a custom color">
+                      <svg class="invoice-color-pen-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>
+                    </label>
+                    <input type="text" id="invoiceHexInput" value="#00D639" maxlength="7" spellcheck="false" aria-label="Hex color code" placeholder="#00D639">
+                  </div>
+                </div>
+
+                <div class="invoice-side-block">
+                  <span class="invoice-side-label">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M14.8 9a2.7 2.7 0 0 0-2.5-1.5c-1.6 0-2.8 1-2.8 2.2 0 3 5.3 1.5 5.3 4.5 0 1.3-1.2 2.3-2.8 2.3a2.9 2.9 0 0 1-2.8-1.6M12 6.5v1M12 16.5v1"/></svg>
+                    Currency
+                  </span>
+                  <div class="invoice-currency-group" id="invoiceCurrencyGroup">
+                    <button type="button" class="invoice-currency-btn is-active" data-symbol="$">🇺🇸 USD</button>
+                    <button type="button" class="invoice-currency-btn" data-symbol="€">🇪🇺 EUR</button>
+                    <button type="button" class="invoice-currency-btn" data-symbol="£">🇬🇧 GBP</button>
+                    <button type="button" class="invoice-currency-btn invoice-currency-more" id="invoiceCurrencyMoreBtn">
+                      <span id="invoiceCurrencyMoreLabel">More</span>
+                      <svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+                    </button>
+                  </div>
+                  <div class="invoice-currency-picker" id="invoiceCurrencyPicker" hidden>
+                    <div class="invoice-currency-search">
+                      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+                      <input type="text" id="invoiceCurrencySearch" placeholder="Search currency or country…" autocomplete="off">
+                    </div>
+                    <div class="invoice-currency-list" id="invoiceCurrencyList"></div>
+                  </div>
+                </div>
+
+                <div class="invoice-side-block">
+                  <span class="invoice-side-label">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 21V9M4 5v0M12 21V13M12 9V3M20 21v-4M20 13V3"/><circle cx="4" cy="7" r="2"/><circle cx="12" cy="11" r="2"/><circle cx="20" cy="15" r="2"/></svg>
+                    Extras
+                  </span>
+
+                  <label class="invoice-check">
+                    <span class="invoice-check-label">Add discount</span>
+                    <span class="invoice-toggle">
+                      <input type="checkbox" class="invoice-checkbox-input" id="invoiceAddDiscount">
+                      <span class="invoice-toggle-track"><span class="invoice-toggle-thumb"></span></span>
+                    </span>
+                  </label>
+                  <div class="invoice-inline-value" id="invoiceDiscountValue" hidden>
+                    <span>%</span><input type="number" min="0" max="100" value="10" id="invoiceDiscountPct">
+                  </div>
+
+                  <label class="invoice-check">
+                    <span class="invoice-check-label">Add tax</span>
+                    <span class="invoice-toggle">
+                      <input type="checkbox" class="invoice-checkbox-input" id="invoiceAddTax">
+                      <span class="invoice-toggle-track"><span class="invoice-toggle-thumb"></span></span>
+                    </span>
+                  </label>
+                  <div class="invoice-inline-value" id="invoiceTaxValue" hidden>
+                    <span>%</span><input type="number" min="0" max="100" value="8" id="invoiceTaxPct">
+                  </div>
+
+                  <label class="invoice-check">
+                    <span class="invoice-check-label">Add shipping</span>
+                    <span class="invoice-toggle">
+                      <input type="checkbox" class="invoice-checkbox-input" id="invoiceAddShipping">
+                      <span class="invoice-toggle-track"><span class="invoice-toggle-thumb"></span></span>
+                    </span>
+                  </label>
+                  <div class="invoice-inline-value" id="invoiceShippingValue" hidden>
+                    <span id="invoiceShippingSymbol">$</span><input type="number" min="0" value="25" id="invoiceShippingAmount">
+                  </div>
+
+                  <label class="invoice-check">
+                    <span class="invoice-check-label">Add terms &amp; conditions</span>
+                    <span class="invoice-toggle">
+                      <input type="checkbox" class="invoice-checkbox-input" id="invoiceAddTerms">
+                      <span class="invoice-toggle-track"><span class="invoice-toggle-thumb"></span></span>
+                    </span>
+                  </label>
+
+                  <label class="invoice-check">
+                    <span class="invoice-check-label">Add signature</span>
+                    <span class="invoice-toggle">
+                      <input type="checkbox" class="invoice-checkbox-input" id="invoiceAddSignature">
+                      <span class="invoice-toggle-track"><span class="invoice-toggle-thumb"></span></span>
+                    </span>
+                  </label>
+                </div>
+
+                <div class="invoice-side-actions">
+                  <button class="invoice-btn is-primary" type="button" id="invoiceDownloadBtn">
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 15V3M12 15l-4-4M12 15l4-4M3 21h18"/></svg>
+                    <span>Download PDF</span>
+                  </button>
+                  <a class="invoice-btn is-outline" id="invoiceSaveBtn" href="contact.html">
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2M12 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8z"/></svg>
+                    <span>Request dashboard access</span>
+                  </a>
+                  <span class="invoice-side-hint">Or send it straight to your client →</span>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============ HOW IT WORKS ============ -->
+  <section class="steps" id="steps">
+    <div class="steps-glow" aria-hidden="true"></div>
+
+    <div class="container">
+      <div class="showcase-head">
+        <span class="eyebrow reveal" data-reveal="0">How it works</span>
+        <h2 class="showcase-title reveal" data-reveal="1">
+          From blank page to <span class="hero-title-accent">paid invoice.</span>
+        </h2>
+        <p class="showcase-sub reveal" data-reveal="2">
+          Three steps. No tutorial required.
+        </p>
+      </div>
+
+      <div class="steps-row reveal" data-reveal="3" id="stepsRow">
+        <div class="steps-line" aria-hidden="true">
+          <div class="steps-line-fill" id="stepsLineFill"></div>
+          <div class="steps-line-dot" id="stepsLineDot"></div>
+        </div>
+
+        <div class="step" data-step="0">
+          <div class="step-badge">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.12 2.12 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
+            <span class="step-num">1</span>
+          </div>
+          <h3>Add your details</h3>
+          <p>Your business, your client, your line items — filled in fast,
+            no blank-page panic.</p>
+        </div>
+
+        <div class="step" data-step="1">
+          <div class="step-badge">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="13.5" cy="6.5" r=".5" fill="currentColor"/><circle cx="17.5" cy="10.5" r=".5" fill="currentColor"/><circle cx="8.5" cy="7.5" r=".5" fill="currentColor"/><circle cx="6.5" cy="12.5" r=".5" fill="currentColor"/><path d="M12 2a10 10 0 1 0 0 20c1.1 0 2-.9 2-2 0-.5-.2-1-.5-1.3-.3-.4-.5-.8-.5-1.3 0-1.1.9-2 2-2h2.4a2 2 0 0 0 2-2A10 10 0 0 0 12 2z"/></svg>
+            <span class="step-num">2</span>
+          </div>
+          <h3>Make it yours</h3>
+          <p>Pick a color, drop in your logo, sign it — or stamp it —
+            right on the page.</p>
+        </div>
+
+        <div class="step" data-step="2">
+          <div class="step-badge">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+            <span class="step-num">3</span>
+          </div>
+          <h3>Send it, track it</h3>
+          <p>Download the PDF, send it straight to your client, and watch
+            it move from sent to paid.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ DASHBOARD SHOWCASE ============ -->
+  <section class="showcase" id="dashboard">
+    <div class="showcase-glow" aria-hidden="true"></div>
+
+    <div class="container">
+
+      <div class="showcase-head">
+        <span class="eyebrow reveal" data-reveal="0">Dashboard</span>
+        <h2 class="showcase-title reveal" data-reveal="1">
+          Every invoice. Every client.<br>
+          <span class="hero-title-accent">One clear view.</span>
+        </h2>
+        <p class="showcase-sub reveal" data-reveal="2">
+          The moment you send an invoice, your dashboard updates. See what's
+          paid, what's pending, and what's overdue — broken down by every
+          client and company you work with.
+        </p>
+      </div>
+
+      <div class="device-stage reveal" data-reveal="3">
+       <div class="device-frame">
+
+        <!-- Laptop -->
+        <div class="laptop">
+          <div class="laptop-top">
+            <div class="laptop-cam"></div>
+            <div class="laptop-screen">
+              <div class="dash-canvas">
+
+              <div class="dash">
+                <aside class="dash-side">
+                  <div class="dash-brand">
+                    <img src="assets/img/favicon.png" alt="">
+                    <span>Bill<b class="accent">Zino</b></span>
+                  </div>
+
+                  <nav class="dash-nav">
+                    <a class="is-active">
+                      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18M7 15l4-4 4 3 5-6"/></svg>
+                      Analytics
+                    </a>
+                    <a>
+                      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2h9l5 5v13a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2zM14 2v6h6"/></svg>
+                      Invoices
+                    </a>
+                    <a>
+                      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+                      Templates
+                    </a>
+                    <a>
+                      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                      Clients
+                    </a>
+                    <a>
+                      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9c.26.63.85 1.09 1.51 1H21a2 2 0 1 1 0 4h-.09c-.7 0-1.29.4-1.51 1z"/></svg>
+                      Settings
+                    </a>
+                  </nav>
+
+                  <div class="dash-user">
+                    <span class="dash-avatar">SB</span>
+                    <div>
+                      <strong>Soufiane B.</strong>
+                      <small>studio@billzino.com</small>
+                    </div>
+                  </div>
+                </aside>
+
+                <main class="dash-main">
+                  <div class="dash-topbar">
+                    <div>
+                      <h3>Dashboard</h3>
+                      <p>Welcome back — here's your month.</p>
+                    </div>
+                    <span class="dash-cta">
+                      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg>
+                      New invoice
+                    </span>
+                  </div>
+
+                  <div class="dash-stats">
+                    <div class="dash-stat">
+                      <span>Total invoiced</span>
+                      <strong class="mono">$18,420</strong>
+                    </div>
+                    <div class="dash-stat is-good">
+                      <span>Paid</span>
+                      <strong class="mono">$14,900</strong>
+                    </div>
+                    <div class="dash-stat is-warn">
+                      <span>Pending</span>
+                      <strong class="mono">$2,800</strong>
+                    </div>
+                    <div class="dash-stat is-bad">
+                      <span>Overdue</span>
+                      <strong class="mono">$720</strong>
+                    </div>
+                  </div>
+
+                  <div class="dash-chart-card">
+                    <div class="dash-chart-head">
+                      <span>Invoiced overview</span>
+                      <span class="dash-chart-pill">+24% vs last month</span>
+                    </div>
+                    <svg class="dash-bars" viewBox="0 0 560 150" preserveAspectRatio="none">
+                      <defs>
+                        <linearGradient id="barGrad" x1="0" y1="0" x2="0" y2="1">
+                          <stop offset="0%" stop-color="#00ff6a"/>
+                          <stop offset="100%" stop-color="#00a82e"/>
+                        </linearGradient>
+                      </defs>
+                      <rect x="10"  y="92"  width="40" height="58" rx="5" fill="url(#barGrad)"/>
+                      <rect x="90"  y="70"  width="40" height="80" rx="5" fill="url(#barGrad)"/>
+                      <rect x="170" y="82"  width="40" height="68" rx="5" fill="url(#barGrad)"/>
+                      <rect x="250" y="40"  width="40" height="110" rx="5" fill="url(#barGrad)"/>
+                      <rect x="330" y="58"  width="40" height="92" rx="5" fill="url(#barGrad)"/>
+                      <rect x="410" y="15"  width="40" height="135" rx="5" fill="url(#barGrad)"/>
+                      <rect x="490" y="30"  width="40" height="120" rx="5" fill="url(#barGrad)"/>
+                    </svg>
+                    <div class="dash-chart-labels">
+                      <span>Jan</span><span>Feb</span><span>Mar</span><span>Apr</span><span>May</span><span>Jun</span><span>Jul</span>
+                    </div>
+                  </div>
+
+                  <div class="dash-table-card">
+                    <div class="dash-table-head">
+                      <span>Recent invoices</span>
+                      <span class="dash-table-link">View all</span>
+                    </div>
+                    <div class="dash-row dash-row--head">
+                      <span>Invoice</span><span>Client</span><span>Status</span><span>Amount</span>
+                    </div>
+                    <div class="dash-row">
+                      <span class="mono">#BZ-2049</span><span>Solaris Design Group</span><span class="dash-pill is-sent">Sent</span><span class="mono">$5,150.00</span>
+                    </div>
+                    <div class="dash-row">
+                      <span class="mono">#BZ-2048</span><span>Northwind Studio</span><span class="dash-pill is-paid">Paid</span><span class="mono">$2,275.00</span>
+                    </div>
+                    <div class="dash-row">
+                      <span class="mono">#BZ-2047</span><span>Almass Retail Co.</span><span class="dash-pill is-paid">Paid</span><span class="mono">$980.00</span>
+                    </div>
+                  </div>
+                </main>
+              </div>
+
+              </div>
+              <div class="laptop-glass"></div>
+            </div>
+          </div>
+          <div class="laptop-base"></div>
+        </div>
+
+        <!-- Phone -->
+        <div class="phone">
+          <div class="phone-notch"></div>
+          <div class="phone-screen">
+            <div class="phone-canvas">
+
+            <div class="phone-topbar">
+              <span>Invoices</span>
+              <span class="phone-bell">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8a6 6 0 1 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+              </span>
+            </div>
+
+            <div class="phone-stat-card">
+              <span>Invoiced this month</span>
+              <strong class="mono">$18,420.00</strong>
+              <div class="phone-stat-row">
+                <span class="phone-dot is-good"></span><span>Paid $14,900</span>
+                <span class="phone-dot is-warn"></span><span>Due $3,520</span>
+              </div>
+            </div>
+
+            <div class="phone-list-label">Recent</div>
+
+            <div class="phone-item">
+              <div class="phone-item-avatar">S</div>
+              <div class="phone-item-body">
+                <span>Solaris Design Group</span>
+                <small>#BZ-2049 · Sent</small>
+              </div>
+              <span class="mono">$5,150</span>
+            </div>
+            <div class="phone-item">
+              <div class="phone-item-avatar">N</div>
+              <div class="phone-item-body">
+                <span>Northwind Studio</span>
+                <small>#BZ-2048 · Paid</small>
+              </div>
+              <span class="mono is-paid">$2,275</span>
+            </div>
+            <div class="phone-item">
+              <div class="phone-item-avatar">A</div>
+              <div class="phone-item-body">
+                <span>Almass Retail Co.</span>
+                <small>#BZ-2047 · Paid</small>
+              </div>
+              <span class="mono is-paid">$980</span>
+            </div>
+
+            </div>
+          </div>
+          <div class="phone-home"></div>
+        </div>
+
+       </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ REVIEWS (disabled — no real reviews/Trustpilot widget yet,
+       bring back once we have them) ============
+  <section class="reviews" id="reviews">
+    <div class="reviews-glow" aria-hidden="true"></div>
+
+    <div class="container">
+      <div class="showcase-head">
+        <span class="eyebrow reveal" data-reveal="0">Reviews</span>
+        <h2 class="showcase-title reveal" data-reveal="1">
+          What people are <span class="hero-title-accent">saying.</span>
+        </h2>
+        <p class="showcase-sub reveal" data-reveal="2">
+          Real feedback from freelancers and studios running their invoicing through BillZino.
+        </p>
+      </div>
+
+      <div class="tp-badge reveal" data-reveal="3">
+        <svg class="tp-logo-star" width="22" height="22" viewBox="0 0 24 24"><path fill="#00b67a" d="M12 2l2.9 6.6 7.1.7-5.4 4.8 1.7 7-6.3-3.9-6.3 3.9 1.7-7L2 9.3l7.1-.7z"/></svg>
+        <span class="tp-name">Trustpilot</span>
+        <span class="tp-sep"></span>
+        <span class="tp-excellent">Excellent</span>
+        <span class="tp-stars">
+          <span class="tp-star"></span><span class="tp-star"></span><span class="tp-star"></span><span class="tp-star"></span><span class="tp-star"></span>
+        </span>
+        <span class="tp-link">4.8 out of 5</span>
+      </div>
+
+      <div class="reviews-marquee reveal" data-reveal="4" id="reviewsMarquee">
+        <div class="reviews-track" id="reviewsTrack">
+
+          <div class="review-card">
+            <div class="review-top">
+              <span class="review-avatar" style="--av:#00d639">SB</span>
+              <div><strong>Sara B.</strong><small>Freelance designer</small></div>
+            </div>
+            <div class="review-stars">★★★★★</div>
+            <p>Switched from making invoices in Canva to BillZino and never looked back. They finally look like I know what I'm doing.</p>
+            <span class="review-verified"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Verified Trustpilot review</span>
+          </div>
+
+          <div class="review-card">
+            <div class="review-top">
+              <span class="review-avatar" style="--av:#4d8dff">MT</span>
+              <div><strong>Marco T.</strong><small>Studio owner, 4 people</small></div>
+            </div>
+            <div class="review-stars">★★★★★</div>
+            <p>The dashboard alone is worth it. I can see who owes what without opening a single spreadsheet.</p>
+            <span class="review-verified"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Verified Trustpilot review</span>
+          </div>
+
+          <div class="review-card">
+            <div class="review-top">
+              <span class="review-avatar" style="--av:#f5b342">AK</span>
+              <div><strong>Amina K.</strong><small>Freelance photographer</small></div>
+            </div>
+            <div class="review-stars">★★★★★</div>
+            <p>Clients actually comment on how professional my invoices look now. Took me two minutes to set up.</p>
+            <span class="review-verified"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Verified Trustpilot review</span>
+          </div>
+
+          <div class="review-card">
+            <div class="review-top">
+              <span class="review-avatar" style="--av:#ff5b9e">JO</span>
+              <div><strong>James O.</strong><small>Agency, 12 people</small></div>
+            </div>
+            <div class="review-stars">★★★★★</div>
+            <p>We moved our whole team over. Everyone uses the same templates now, so invoices finally look consistent.</p>
+            <span class="review-verified"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Verified Trustpilot review</span>
+          </div>
+
+          <div class="review-card">
+            <div class="review-top">
+              <span class="review-avatar" style="--av:#7c6bff">PN</span>
+              <div><strong>Priya N.</strong><small>Freelance developer</small></div>
+            </div>
+            <div class="review-stars">★★★★★</div>
+            <p>Built my first invoice in under a minute. The signature and stamp feature is a nice touch for contracts.</p>
+            <span class="review-verified"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Verified Trustpilot review</span>
+          </div>
+
+          <div class="review-card">
+            <div class="review-top">
+              <span class="review-avatar" style="--av:#00d639">DR</span>
+              <div><strong>Diego R.</strong><small>Independent consultant</small></div>
+            </div>
+            <div class="review-stars">★★★★★</div>
+            <p>Simple, fast, and it just works. I genuinely don't think about invoicing anymore, which is exactly the point.</p>
+            <span class="review-verified"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Verified Trustpilot review</span>
+          </div>
+
+          <div class="review-card">
+            <div class="review-top">
+              <span class="review-avatar" style="--av:#4d8dff">LF</span>
+              <div><strong>Lena F.</strong><small>Freelance copywriter</small></div>
+            </div>
+            <div class="review-stars">★★★★★</div>
+            <p>Finally an invoicing tool that doesn't feel like it was built in 2010. My clients notice the difference.</p>
+            <span class="review-verified"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Verified Trustpilot review</span>
+          </div>
+
+          duplicate set for the seamless marquee loop
+          <div class="review-card" aria-hidden="true">
+            <div class="review-top">
+              <span class="review-avatar" style="--av:#00d639">SB</span>
+              <div><strong>Sara B.</strong><small>Freelance designer</small></div>
+            </div>
+            <div class="review-stars">★★★★★</div>
+            <p>Switched from making invoices in Canva to BillZino and never looked back. They finally look like I know what I'm doing.</p>
+            <span class="review-verified"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Verified Trustpilot review</span>
+          </div>
+
+          <div class="review-card" aria-hidden="true">
+            <div class="review-top">
+              <span class="review-avatar" style="--av:#4d8dff">MT</span>
+              <div><strong>Marco T.</strong><small>Studio owner, 4 people</small></div>
+            </div>
+            <div class="review-stars">★★★★★</div>
+            <p>The dashboard alone is worth it. I can see who owes what without opening a single spreadsheet.</p>
+            <span class="review-verified"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Verified Trustpilot review</span>
+          </div>
+
+          <div class="review-card" aria-hidden="true">
+            <div class="review-top">
+              <span class="review-avatar" style="--av:#f5b342">AK</span>
+              <div><strong>Amina K.</strong><small>Freelance photographer</small></div>
+            </div>
+            <div class="review-stars">★★★★★</div>
+            <p>Clients actually comment on how professional my invoices look now. Took me two minutes to set up.</p>
+            <span class="review-verified"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Verified Trustpilot review</span>
+          </div>
+
+          <div class="review-card" aria-hidden="true">
+            <div class="review-top">
+              <span class="review-avatar" style="--av:#ff5b9e">JO</span>
+              <div><strong>James O.</strong><small>Agency, 12 people</small></div>
+            </div>
+            <div class="review-stars">★★★★★</div>
+            <p>We moved our whole team over. Everyone uses the same templates now, so invoices finally look consistent.</p>
+            <span class="review-verified"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Verified Trustpilot review</span>
+          </div>
+
+          <div class="review-card" aria-hidden="true">
+            <div class="review-top">
+              <span class="review-avatar" style="--av:#7c6bff">PN</span>
+              <div><strong>Priya N.</strong><small>Freelance developer</small></div>
+            </div>
+            <div class="review-stars">★★★★★</div>
+            <p>Built my first invoice in under a minute. The signature and stamp feature is a nice touch for contracts.</p>
+            <span class="review-verified"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Verified Trustpilot review</span>
+          </div>
+
+          <div class="review-card" aria-hidden="true">
+            <div class="review-top">
+              <span class="review-avatar" style="--av:#00d639">DR</span>
+              <div><strong>Diego R.</strong><small>Independent consultant</small></div>
+            </div>
+            <div class="review-stars">★★★★★</div>
+            <p>Simple, fast, and it just works. I genuinely don't think about invoicing anymore, which is exactly the point.</p>
+            <span class="review-verified"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Verified Trustpilot review</span>
+          </div>
+
+          <div class="review-card" aria-hidden="true">
+            <div class="review-top">
+              <span class="review-avatar" style="--av:#4d8dff">LF</span>
+              <div><strong>Lena F.</strong><small>Freelance copywriter</small></div>
+            </div>
+            <div class="review-stars">★★★★★</div>
+            <p>Finally an invoicing tool that doesn't feel like it was built in 2010. My clients notice the difference.</p>
+            <span class="review-verified"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Verified Trustpilot review</span>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+  ============ END REVIEWS ============ -->
+
+  <!-- ============ FAQ ============ -->
+  <section class="faq" id="faq">
+    <div class="faq-glow" aria-hidden="true"></div>
+
+    <div class="container faq-layout">
+
+      <div class="faq-side reveal" data-reveal="0">
+        <span class="eyebrow">FAQ</span>
+        <h2 class="faq-title">Questions,<br>answered.</h2>
+        <p class="faq-sub">Everything people ask before switching their invoicing to BillZino — no fine print.</p>
+
+        <div class="faq-search">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+          <input type="text" id="faqSearch" placeholder="Search questions — signup, logo, currency…">
+          <button type="button" class="faq-search-clear" id="faqSearchClear" aria-label="Clear search" hidden>
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6L6 18M6 6l12 12"/></svg>
+          </button>
+        </div>
+
+        <div class="faq-categories" id="faqCategories">
+          <span class="faq-cat-pill" id="faqCatPill" aria-hidden="true"></span>
+          <button class="faq-cat is-active" data-cat="all">All questions <span id="faqCountAll">10</span></button>
+          <button class="faq-cat" data-cat="essentials">The essentials <span>2</span></button>
+          <button class="faq-cat" data-cat="templates">Templates &amp; branding <span>2</span></button>
+          <button class="faq-cat" data-cat="payments">Payments &amp; currency <span>2</span></button>
+          <button class="faq-cat" data-cat="dashboard">Dashboard &amp; tracking <span>2</span></button>
+          <button class="faq-cat" data-cat="security">Security &amp; data <span>2</span></button>
+        </div>
+      </div>
+
+      <div class="faq-list" id="faqList">
+
+        <div class="faq-item is-open reveal" data-reveal="0" data-cat="essentials">
+          <button class="faq-q" type="button">
+            <span>Do I need to sign up to create an invoice?</span>
+            <span class="faq-icon"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg></span>
+          </button>
+          <div class="faq-a-wrap"><div class="faq-a-inner"><p>No — you can build and download an invoice as a PDF right now with no account. Dashboard access (saved invoices, client tracking, payment status) is on the Startup and Business plans, currently set up by request — see <a href="pricing.html">Pricing</a>.</p></div></div>
+        </div>
+
+        <div class="faq-item reveal" data-reveal="1" data-cat="essentials">
+          <button class="faq-q" type="button">
+            <span>How long does it take to create my first invoice?</span>
+            <span class="faq-icon"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg></span>
+          </button>
+          <div class="faq-a-wrap"><div class="faq-a-inner"><p>Most people finish their first invoice in under two minutes: pick a template, add your details and line items, then download or send.</p></div></div>
+        </div>
+
+        <div class="faq-item reveal" data-reveal="2" data-cat="templates">
+          <button class="faq-q" type="button">
+            <span>Can I use my own logo and brand colors?</span>
+            <span class="faq-icon"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg></span>
+          </button>
+          <div class="faq-a-wrap"><div class="faq-a-inner"><p>Yes — upload your logo directly onto the invoice and drag to resize it, then pick an accent color that carries through the whole document, from the header stripe to the total.</p></div></div>
+        </div>
+
+        <div class="faq-item reveal" data-reveal="3" data-cat="templates">
+          <button class="faq-q" type="button">
+            <span>Can I add a signature or stamp?</span>
+            <span class="faq-icon"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg></span>
+          </button>
+          <div class="faq-a-wrap"><div class="faq-a-inner"><p>Yes. There's a built-in signature pad you can draw on directly, plus the option to upload and position a stamp image on the invoice.</p></div></div>
+        </div>
+
+        <div class="faq-item reveal" data-reveal="4" data-cat="payments">
+          <button class="faq-q" type="button">
+            <span>Does BillZino process payments for me?</span>
+            <span class="faq-icon"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg></span>
+          </button>
+          <div class="faq-a-wrap"><div class="faq-a-inner"><p>No — BillZino creates and tracks invoices, it doesn't move money. You add your own bank details or payment instructions, and your client pays you directly.</p></div></div>
+        </div>
+
+        <div class="faq-item reveal" data-reveal="5" data-cat="payments">
+          <button class="faq-q" type="button">
+            <span>Can I add tax, discounts, or shipping?</span>
+            <span class="faq-icon"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg></span>
+          </button>
+          <div class="faq-a-wrap"><div class="faq-a-inner"><p>Yes, each is a simple toggle in the builder — turn one on, set the percentage or amount, and it's factored into the total automatically.</p></div></div>
+        </div>
+
+        <div class="faq-item reveal" data-reveal="6" data-cat="dashboard">
+          <button class="faq-q" type="button">
+            <span>How do I know when a client has paid?</span>
+            <span class="faq-icon"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg></span>
+          </button>
+          <div class="faq-a-wrap"><div class="faq-a-inner"><p>On the Startup and Business plans, you mark an invoice as paid and your dashboard updates — sorted by client, company, and status. That's currently set up by request while we onboard new accounts personally — <a href="contact.html">contact us</a> to get set up.</p></div></div>
+        </div>
+
+        <div class="faq-item reveal" data-reveal="7" data-cat="dashboard">
+          <button class="faq-q" type="button">
+            <span>Can I track multiple clients and companies in one place?</span>
+            <span class="faq-icon"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg></span>
+          </button>
+          <div class="faq-a-wrap"><div class="faq-a-inner"><p>Yes — that's what the dashboard on Startup and Business is for: paid, pending, and overdue, per client, so you're not digging through a spreadsheet. Accounts are set up by request for now — <a href="contact.html">contact us</a> to get started.</p></div></div>
+        </div>
+
+        <div class="faq-item reveal" data-reveal="8" data-cat="security">
+          <button class="faq-q" type="button">
+            <span>Is my client data secure?</span>
+            <span class="faq-icon"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg></span>
+          </button>
+          <div class="faq-a-wrap"><div class="faq-a-inner"><p>Yes — the builder runs in your own browser, so nothing you type is uploaded anywhere unless you download the PDF yourself. Once dashboard accounts are set up, your invoices and client details stay private to your account — we don't sell or share your data.</p></div></div>
+        </div>
+
+        <div class="faq-item reveal" data-reveal="9" data-cat="security">
+          <button class="faq-q" type="button">
+            <span>Can I export my invoices as PDF?</span>
+            <span class="faq-icon"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg></span>
+          </button>
+          <div class="faq-a-wrap"><div class="faq-a-inner"><p>Yes, one click downloads a clean PDF version of any invoice, ready to send or archive.</p></div></div>
+        </div>
+
+        <p class="faq-empty" id="faqEmpty" hidden>No questions match "<span id="faqEmptyQuery"></span>" — try a different search.</p>
+
+        <div class="faq-cta reveal" data-reveal="10">
+          <div class="faq-cta-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          </div>
+          <div>
+            <strong>Still have a question?</strong>
+            <p>We'll get back to you within a day — no bots.</p>
+          </div>
+          <a href="contact.html" class="btn btn-primary">Contact us</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CTA BAND ============ -->
+  <section class="cta-band">
+    <div class="cta-band-glow cta-band-glow--a" aria-hidden="true"></div>
+    <div class="cta-band-glow cta-band-glow--b" aria-hidden="true"></div>
+    <div class="container cta-band-inner reveal" data-reveal="0" id="ctaBandInner">
+      <h2 class="cta-band-title">
+        <span class="cta-word" style="--i:0">Stop</span> <span class="cta-word" style="--i:1">formatting</span> <span class="cta-word" style="--i:2">invoices</span> <span class="cta-word" style="--i:3">in</span> <span class="cta-word" style="--i:4">Word.</span><br>
+        <span class="cta-word" style="--i:5">Start</span> <span class="cta-word" style="--i:6">sending</span> <span class="cta-word" style="--i:7">them</span> <span class="cta-word" style="--i:8">in</span> <span class="cta-word cta-word-accent" style="--i:9">seconds.</span>
+      </h2>
+      <p class="cta-band-sub">Free to start, no credit card. Your first branded invoice is two minutes away.</p>
+      <div class="cta-band-actions">
+        <a href="contact.html" class="btn btn-primary btn-lg magnetic">
+          <span>Request access</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </a>
+        <a href="#builder" class="btn btn-outline btn-lg magnetic"><span>Try the builder</span></a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer" id="siteFooter">
+  <div class="footer-glow" aria-hidden="true"></div>
+
+  <div class="container footer-top">
+
+    <div class="footer-brand">
+      <a href="index.html" class="brand footer-logo">
+        <img src="assets/img/favicon.png" alt="BillZino" class="brand-mark">
+        <span class="brand-name">Bill<span class="accent">Zino</span></span>
+      </a>
+      <p class="footer-brand-desc">Create a branded invoice in seconds, then mark it paid, pending, or overdue yourself — every invoice, in one dashboard. Built for any business that sends invoices, from brand-new startups to large teams.</p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Product</h4>
+      <a href="#dashboard">Dashboard</a>
+      <a href="#builder">Invoice builder</a>
+      <a href="#steps">How it works</a>
+      <a href="pricing.html">Pricing</a>
+    </div>
+
+    <div class="footer-col">
+      <h4>Resources</h4>
+      <a href="#faq">FAQ</a>
+    </div>
+
+    <div class="footer-col">
+      <h4>Company</h4>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+
+    <div class="footer-col">
+      <h4>Legal</h4>
+      <a href="privacy.html">Privacy policy</a>
+      <a href="terms.html">Terms of service</a>
+      <a href="refund.html">Refund policy</a>
+      <a href="cookies.html">Cookie policy</a>
+      <a href="privacy.html#security">Data &amp; security</a>
+    </div>
+
+  </div>
+
+  <div class="container footer-bottom">
+    <p class="footer-disclaimer">BillZino creates, brands, and tracks invoices — it never touches your money. We're not a payment processor, so we never see or store your bank details or your clients' card information.</p>
+    <p class="footer-copyright">© 2026 RITAJAD LLC. All rights reserved.</p>
+  </div>
+</footer>
+
+<button class="back-to-top" id="backToTop" aria-label="Back to top">
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="js/main.js?v=41"></script>
+</body>
+</html>
