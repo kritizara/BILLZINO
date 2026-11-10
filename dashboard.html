@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<script>try{var t=localStorage.getItem("billzino-theme");if(t==="light"||t==="dark")document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard | BillZino</title>
+<meta name="description" content="Your BillZino dashboard.">
+<meta name="robots" content="noindex,nofollow">
+<link rel="icon" type="image/webp" href="assets/img/favicon-96.webp">
+<link rel="icon" type="image/png" sizes="48x48" href="assets/img/favicon-48.png">
+<link rel="icon" type="image/png" sizes="192x192" href="assets/img/favicon-192.png">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<meta name="theme-color" content="#0b0d0f">
+<noscript></noscript>
+<link rel="preload" href="/assets/fonts/inter-latin-400-800.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="css/style.css?v=177">
+<script>
+window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-G66L0VH8LP');
+(function(){var d=0;function l(){if(d)return;d=1;var s=document.createElement('script');s.async=1;s.src='https://www.googletagmanager.com/gtag/js?id=G-G66L0VH8LP';s.fetchPriority='low';document.head.appendChild(s)}function i(){'requestIdleCallback'in window?requestIdleCallback(l,{timeout:3000}):setTimeout(l,2000)}function w(){setTimeout(l,10000)}document.readyState==='complete'?w():addEventListener('load',w);['pointerdown','keydown','touchstart','scroll'].forEach(function(e){addEventListener(e,l,{once:true,passive:true})})})();
+</script>
+</head>
+<body>
+
+<div class="app-shell" id="appShell" hidden>
+  <aside class="app-sidebar">
+    <a href="index.html" class="app-logo">
+      <img src="assets/img/favicon-96.webp" alt="">
+      <span>Bill<span class="accent">Zino</span></span>
+    </a>
+
+    <nav class="app-nav" id="appNav">
+      <button class="app-nav-item is-active" type="button" data-view="overview">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18M7 15l4-4 4 3 5-6"/></svg>
+        Overview
+      </button>
+      <button class="app-nav-item" type="button" data-view="invoices">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2h9l5 5v13a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2zM14 2v6h6"/></svg>
+        Invoices
+      </button>
+      <button class="app-nav-item" type="button" data-view="clients">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        Clients
+      </button>
+      <button class="app-nav-item" type="button" data-view="reports">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 20V10M12 20V4M6 20v-6"/></svg>
+        Reports
+      </button>
+      <button class="app-nav-item" type="button" data-view="settings">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9c.26.63.85 1.09 1.51 1H21a2 2 0 1 1 0 4h-.09c-.7 0-1.29.4-1.51 1z"/></svg>
+        Settings
+      </button>
+    </nav>
+
+    <div class="app-sidebar-foot">
+      <a href="index.html#builder" class="btn app-new-btn">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg>
+        New invoice
+      </a>
+    </div>
+  </aside>
+
+  <div class="app-main">
+    <header class="app-topbar">
+      <h1 class="app-page-title" id="appPageTitle">Overview</h1>
+      <div class="app-user">
+        <span class="app-user-avatar" id="appUserAvatar">–</span>
+        <span class="app-user-name" id="appUserName"></span>
+        <button class="app-user-logout" id="appLogoutBtn" type="button">Log out</button>
+      </div>
+    </header>
+
+    <div class="app-content" id="appContent">
+
+      <section class="app-view is-active" data-view="overview" id="viewOverview">
+        <div class="stat-grid" id="statsGrid"></div>
+        <div class="chart-card">
+          <div class="chart-head">
+            <h3>Invoiced by month</h3>
+          </div>
+          <div class="chart-bars" id="chartBars"></div>
+        </div>
+        <div class="card-panel">
+          <div class="card-panel-head">
+            <h3>Recent activity — issued, due, paid</h3>
+            <a href="#" data-view-link="invoices">View all</a>
+          </div>
+          <div id="recentInvoicesList"></div>
+        </div>
+      </section>
+
+      <section class="app-view" data-view="invoices" id="viewInvoices">
+        <div class="invoices-toolbar">
+          <input type="text" class="invoices-search" id="invoiceSearch" placeholder="Search by client or invoice #…">
+          <div class="status-tabs" id="statusTabs">
+            <button class="status-tab is-active" data-status="all" type="button">All</button>
+            <button class="status-tab" data-status="paid" type="button">Paid</button>
+            <button class="status-tab" data-status="pending" type="button">Pending</button>
+            <button class="status-tab" data-status="overdue" type="button">Overdue</button>
+          </div>
+        </div>
+        <div class="card-panel">
+          <div id="invoicesList"></div>
+        </div>
+      </section>
+
+      <section class="app-view" data-view="clients" id="viewClients">
+        <div id="clientsListWrap">
+          <div class="client-grid" id="clientsGrid"></div>
+        </div>
+        <div id="clientDetailWrap" hidden>
+          <button class="client-detail-back" id="clientDetailBack" type="button">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+            Back to clients
+          </button>
+          <div class="card-panel">
+            <div class="card-panel-head">
+              <h3 id="clientDetailName">Client</h3>
+            </div>
+            <div id="clientDetailInvoices"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="app-view" data-view="reports" id="viewReports">
+        <div class="stat-grid" id="reportsStatsGrid"></div>
+        <div class="reports-top-grid">
+          <div class="chart-card">
+            <div class="chart-head"><h3>Invoiced by month</h3></div>
+            <div class="chart-bars" id="reportsChartBars"></div>
+          </div>
+          <div class="chart-card donut-card">
+            <div class="chart-head" style="margin-bottom:6px;"><h3>Payments summary</h3></div>
+            <div class="donut-wrap" id="donutWrap"></div>
+            <div class="donut-legend" id="donutLegend"></div>
+          </div>
+        </div>
+        <div class="card-panel">
+          <div class="card-panel-head"><h3>Aging — what's overdue, and by how much</h3></div>
+          <div id="agingList"></div>
+        </div>
+        <div class="card-panel">
+          <div class="card-panel-head"><h3>Clients by outstanding balance</h3></div>
+          <div id="topClientsList"></div>
+        </div>
+      </section>
+
+      <section class="app-view" data-view="settings" id="viewSettings">
+        <div class="settings-card">
+          <div class="settings-row"><span>Name</span><span id="settingsName"></span></div>
+          <div class="settings-row"><span>Email</span><span id="settingsEmail"></span></div>
+          <div class="settings-row"><span>Account</span><button class="btn btn-outline" id="settingsLogoutBtn" type="button">Log out</button></div>
+        </div>
+        <p class="settings-note">Test account — your invoices and clients are stored locally in this browser for now. Nothing here syncs across devices yet.</p>
+
+        <div class="settings-card" style="margin-top:16px;">
+          <div class="settings-row">
+            <span>Try it with sample data</span>
+            <button class="btn btn-outline" id="settingsSeedBtn" type="button">Load sample invoices</button>
+          </div>
+          <div class="settings-row">
+            <span>Start over</span>
+            <button class="btn btn-outline" id="settingsClearBtn" type="button">Clear my data</button>
+          </div>
+        </div>
+        <p class="settings-note">"Load sample invoices" adds 10 fake clients/invoices in this browser only, so you can see what a busy dashboard looks like. "Clear my data" removes everything and starts fresh.</p>
+      </section>
+
+    </div>
+  </div>
+</div>
+
+<div class="app-mobile-bottom-nav" id="appMobileBottomNav" hidden>
+  <button class="is-active" data-view="overview" type="button">Overview</button>
+  <button data-view="invoices" type="button">Invoices</button>
+  <button data-view="clients" type="button">Clients</button>
+  <button data-view="settings" type="button">Settings</button>
+</div>
+
+<div class="modal-overlay" id="invoiceModalOverlay" hidden>
+  <div class="modal-card">
+    <div class="modal-head">
+      <div>
+        <h3 class="modal-title" id="modalTitle">Invoice</h3>
+        <span class="modal-sub" id="modalSub"></span>
+      </div>
+      <button type="button" class="modal-close" id="modalClose" aria-label="Close">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6L6 18M6 6l12 12"/></svg>
+      </button>
+    </div>
+    <div class="modal-amount-row">
+      <span class="stat-label">Amount due</span>
+      <strong id="modalAmount"></strong>
+    </div>
+    <div id="modalTimeline" style="margin-bottom:18px;"></div>
+    <div class="modal-line-items" id="modalLineItems"></div>
+    <div class="modal-actions">
+      <button type="button" class="btn btn-outline" id="modalDownloadBtn">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 15V3M12 15l-4-4M12 15l4-4M3 21h18"/></svg>
+        Download PDF
+      </button>
+      <button type="button" class="btn btn-primary" id="modalStatusBtn"></button>
+    </div>
+  </div>
+</div>
+
+<script src="js/auth.js?v=1" defer></script>
+<script src="js/data.js?v=4" defer></script>
+<script src="js/pdf.js?v=3" defer></script>
+<script src="js/main.js?v=101" defer></script>
+<script src="js/dashboard.js?v=10" defer></script>
+</body>
+</html>

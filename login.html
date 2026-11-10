@@ -1,17 +1,27 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="dark">
 <head>
+<script>try{var t=localStorage.getItem("billzino-theme");if(t==="light"||t==="dark")document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Log in — BillZino</title>
-<meta name="description" content="BillZino accounts are currently set up by request — contact us to get your login access.">
-<link rel="icon" type="image/png" href="assets/img/favicon.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css?v=42">
+<title>Log in | BillZino</title>
+<meta name="description" content="Log in to your BillZino dashboard.">
+<meta name="robots" content="noindex,nofollow">
+<link rel="icon" type="image/webp" href="assets/img/favicon-96.webp">
+<link rel="icon" type="image/png" sizes="48x48" href="assets/img/favicon-48.png">
+<link rel="icon" type="image/png" sizes="192x192" href="assets/img/favicon-192.png">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<meta name="theme-color" content="#0b0d0f">
+<noscript></noscript>
+<link rel="preload" href="/assets/fonts/inter-latin-400-800.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="css/style.css?v=177">
+<script>
+window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-G66L0VH8LP');
+(function(){var d=0;function l(){if(d)return;d=1;var s=document.createElement('script');s.async=1;s.src='https://www.googletagmanager.com/gtag/js?id=G-G66L0VH8LP';s.fetchPriority='low';document.head.appendChild(s)}function i(){'requestIdleCallback'in window?requestIdleCallback(l,{timeout:3000}):setTimeout(l,2000)}function w(){setTimeout(l,10000)}document.readyState==='complete'?w():addEventListener('load',w);['pointerdown','keydown','touchstart','scroll'].forEach(function(e){addEventListener(e,l,{once:true,passive:true})})})();
+</script>
 </head>
-<body>
+
+<h1 class="sr-only">Log in to BillZino</h1><body>
 
 <div class="noise"></div>
 
@@ -19,20 +29,65 @@
   <div class="auth-glow" aria-hidden="true"></div>
 
   <a href="index.html" class="auth-brand reveal" data-reveal="0">
-    <img src="assets/img/favicon.png" alt="BillZino">
+    <img src="assets/img/favicon-96.webp" alt="BillZino">
     <span>Bill<span class="accent">Zino</span></span>
   </a>
-  <p class="auth-subtitle reveal" data-reveal="1">Accounts aren't self-serve yet</p>
+  <p class="auth-subtitle reveal" data-reveal="1">Welcome back</p>
 
   <div class="auth-card reveal" data-reveal="2">
-    <p class="auth-notice">We're onboarding dashboard accounts personally while that part of BillZino rolls out. Contact us and we'll get your login set up — usually within a day.</p>
-    <a href="contact.html" class="btn btn-primary auth-submit">Contact us</a>
-    <p class="auth-legal">By contacting us, you agree to our <a href="terms.html">Terms</a> and <a href="privacy.html">Privacy Policy</a>.</p>
+    <p class="auth-error" id="authError" hidden></p>
+    <form class="auth-form" id="loginForm">
+      <div class="auth-field">
+        <label for="loginEmail">Email</label>
+        <input type="email" id="loginEmail" name="email" placeholder="you@example.com" autocomplete="email" required>
+      </div>
+      <div class="auth-field">
+        <label for="loginPassword">Password</label>
+        <div class="auth-input-wrap">
+          <input type="password" id="loginPassword" name="password" placeholder="Your password" autocomplete="current-password" required>
+          <button type="button" class="auth-eye-toggle" aria-label="Show password"></button>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary auth-submit">Log in</button>
+      <p class="auth-legal">By logging in, you agree to our <a href="terms.html">Terms</a> and <a href="privacy.html">Privacy Policy</a>.</p>
+    </form>
   </div>
 
-  <p class="auth-switch reveal" data-reveal="3">Just need an invoice? <a href="index.html#builder">Try the builder</a> — no account needed.</p>
+  <p class="auth-switch reveal" data-reveal="3">Don't have an account? <a href="signup.html">Sign up</a></p>
+  <p class="auth-switch-note reveal" data-reveal="4">Test accounts only for now — saved locally in this browser.</p>
 </div>
 
-<script src="js/main.js?v=42"></script>
+<script src="js/auth.js?v=1" defer></script>
+<script src="js/data.js?v=4" defer></script>
+<script src="js/main.js?v=101" defer></script>
+<script>
+  document.getElementById('loginForm').addEventListener('submit', (e) => {
+    e.preventDefault();
+    const errorEl = document.getElementById('authError');
+    const result = billzinoAuth.login({
+      email: document.getElementById('loginEmail').value,
+      password: document.getElementById('loginPassword').value,
+    });
+    if (!result.ok) {
+      errorEl.textContent = result.error;
+      errorEl.hidden = false;
+      return;
+    }
+    const pendingRaw = sessionStorage.getItem('billzino-pending-invoice');
+    let wasSend = false;
+    if (pendingRaw) {
+      sessionStorage.removeItem('billzino-pending-invoice');
+      try {
+        const { invoiceData, action } = JSON.parse(pendingRaw);
+        billzinoData.saveInvoice(result.session.userId, invoiceData, action === 'send');
+        if (action === 'send') {
+          wasSend = true;
+          window.billzinoOpenInvoiceEmail(invoiceData);
+        }
+      } catch {}
+    }
+    setTimeout(() => { window.location.href = 'dashboard.html'; }, wasSend ? 400 : 0);
+  });
+</script>
 </body>
 </html>
